@@ -51,6 +51,11 @@ optional arguments:
 
 ## Training
 
+注意：参考CSDN https://blog.csdn.net/qq_42250789/article/details/108125046
+
+使用自己的数据集训练，用轻量级tiny模型
+需要修改yolov3-tiny.cfg中的两处地方，再自己下载yolov3-tiny.weights，运行命令`python convert.py -w yolov3-tiny.cfg yolov3-tiny.weights model_data/yolo_weights.h5` 
+
 1. Generate your own annotation file and class names file.  
     One row for one image;  
     Row format: `image_file_path box1 box2 ... boxN`;  
